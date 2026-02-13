@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scroll global */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base body styling */
+body {
+  @apply bg-black text-white antialiased;
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+/* Scrollbar premium */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #d4af37, #a67c00);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* Selection color (quand on sélectionne du texte) */
+::selection {
+  background: #d4af37;
+  color: black;
+}
+
+/* Smooth transitions globales */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
